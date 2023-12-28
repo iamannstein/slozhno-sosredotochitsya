@@ -1,1 +1,1 @@
-https://github.com/iamannstein/slozhno-sosredotochitsya
+https://github.com/iamannstein/slozhno-sosredotochitsya/
