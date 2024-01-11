@@ -23,7 +23,8 @@
 
   :root {
     --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    --content-mg-blk-start: 50px;
+    --content-mg-blk-start: 40px;
+    --content-gap: 50px;
   }
 
 }
@@ -32,7 +33,8 @@
 
   :root {
     --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    --content-mg-blk-start: 80px;
+    --content-mg-blk-start: 60px;
+    --content-gap: 80px;
   }
 
 }
@@ -43,7 +45,8 @@
   :root {
     --pd: 2vi;
     --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    --content-mg-blk-start: 80px;
+    --content-mg-blk-start: 60px;
+    --content-gap: 80px;
   }
 
 }
