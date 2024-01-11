@@ -59,7 +59,7 @@
   
   .header__content-title {
     color: var(--title-color);
-    text-shadow: 4px 4px 0 #ff0070;
+    text-shadow: 4px 4px 0 var(--accent-color);
   }
   
   .header__theme-menu-button {
@@ -109,7 +109,7 @@
 
 .theme_light .header__content-title {
   color: var(--title-color);
-  text-shadow: 4px 4px 0 #ff0070;
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .theme_light .header__theme-menu-button {
