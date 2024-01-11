@@ -47,7 +47,7 @@
     text-align: right;
     line-height: 25px;
     text-transform: uppercase;
-    margin-inline-end: calc(10px + 0.5vi);;
+    margin-inline-end: calc(10px + 0.5vi);
     justify-self: end;
   }
   

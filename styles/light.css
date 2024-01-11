@@ -37,8 +37,8 @@
 
   :root {
     /* Дублируем переменные светлой темы */
-    --bg-color: #FFF1F7;;
-    --main-text-color: #353430;;
+    --bg-color: #FFF1F7;
+    --main-text-color: #353430;
     --accent-color: #FF8DCB;
     --title-color: #FFC2E6;
     --main-font: 'IBM Plex Mono';
