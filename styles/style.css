@@ -47,7 +47,7 @@
     text-align: right;
     line-height: 25px;
     text-transform: uppercase;
-    margin-inline-end: 7.5vi;
+    margin-inline-end: calc(10px + 0.5vi);;
     justify-self: end;
   }
   
@@ -94,6 +94,7 @@
   }
   
   .header__theme-menu-button:focus-visible {
+    outline: none;
     border-block-end: 0.5px solid currentColor;
   }
   
@@ -166,11 +167,12 @@
     text-shadow: 2px 2px 0 var(--accent-color);
   }
   
-  .content__section-link:focus-visible {
+  .content__section-link:hover {
     outline: 0.5px solid currentColor;
   }
   
-  .content__section-link:hover {
+  .content__section-link:focus-visible {
+    outline: none;
     border-block-end: 0.5px solid currentColor;
   }
   
@@ -212,7 +214,7 @@
   }
 
   .header__decor-element {
-    margin-inline-end: 3.75vi;
+    margin-inline-end: calc(20px + 0.5vi);
   }
 
   .header__content-title {
