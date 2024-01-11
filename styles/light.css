@@ -9,15 +9,13 @@
   --main-text-color: #353430;
   --accent-color: #FF8DCB;
   --title-color: #FFC2E6;
-  --main-font: 'IBM Plex Mono';
-  --main-font-weight: normal;
-  --main-font-size: 18px;
   --bg-image: url(../images/cover-image-light.png);
+
 }
 
-@media (375px <= width < 768px) {
+@media (768px <= width < 1024px) {
 
-  :root {
+  :root .theme_light {
     --pd: 2.61vi;
   }
 
@@ -41,30 +39,31 @@
     --main-text-color: #353430;
     --accent-color: #FF8DCB;
     --title-color: #FFC2E6;
-    --main-font: 'IBM Plex Mono';
-    --main-font-weight: normal;
-    --main-font-size: 18px;
     --bg-image: url(../images/cover-image-light.png);
-    --cmn-padding: 2.61vi;
-
+ 
   }
 
+ .decorated-zone::before {
+    border-block-start: 1px solid var(--main-text-color);
+    border-inline-end: 1px solid var(--main-text-color);
+  }
+  
+  .decorated-zone::after {
+    border-block-end: 1px solid var(--main-text-color);
+    border-inline-start: 1px solid var(--main-text-color);
+  }
+  
   .header__decor-element {
     display: none;
   }
-
+  
   .header__content-title {
     color: var(--title-color);
     text-shadow: 4px 4px 0 #ff0070;
   }
   
-  .page {
-    background-image: var(--bg-image);
-  }
-
   .header__theme-menu-button {
     color: var(--main-text-color);
-
   }
   
   .header__content-paragraph {
@@ -75,7 +74,6 @@
     color: var(--main-text-color);
   }
   
-  
   .content__section-subtitle {
     color: var(--main-text-color);
   }
@@ -85,7 +83,7 @@
 .page.theme_light {
   background-color: var(--bg-color);
   color: var(--main-text-color);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, Arial, sans-serif);
   font-weight: var(--main-font-weight);
   font-size: var(--main-font-size);
   background-image: var(--bg-image);
@@ -129,6 +127,3 @@
 .theme_light .content__section-subtitle {
   color: var(--main-text-color);
 }
-
-/* Остальные стили */
-

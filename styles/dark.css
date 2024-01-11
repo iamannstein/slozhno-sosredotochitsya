@@ -9,15 +9,12 @@
   --main-text-color: #f1b2ce;
   --accent-color: #ff0070;
   --title-color: #db00ff;
-  --main-font: 'IBM Plex Mono';
-  --main-font-weight: normal;
-  --main-font-size: 18px;
   --bg-image: url(../images/cover-image-dark.png);
 }
 
-@media (375px <= width < 768px) {
+@media (768px <= width < 1024px) {
 
-  :root {
+  :root .theme_dark {
     --pd: 2.61vi;
   }
 
@@ -38,7 +35,7 @@
   */
   background-color: var(--bg-color);
   color: var(--main-text-color);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, Arial, sans-serif);
   font-weight: var(--main-font-weight);
   font-size: var(--main-font-size);
   background-image: var(--bg-image);
@@ -46,6 +43,20 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.theme_dark .decorated-zone::before {
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+}
+
+.theme_dark .decorated-zone::after {
+  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
+}
+
+.theme_dark .header__decor-element {
+  display: block;
 }
 
 .theme_dark .header__theme-menu-button {

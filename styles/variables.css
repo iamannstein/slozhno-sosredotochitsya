@@ -14,9 +14,7 @@
   --main-font-size: 18px;
   --bg-image: url(../images/cover-image-dark.png);
   --block-size: 100vh;
-  --pd: 2.61vi;
-
-  
+  --pd: 2.61vi;  
 }
 
 @media (375px <= width < 768px) {

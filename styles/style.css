@@ -20,7 +20,6 @@
     margin-block-start: -10px;
     display: grid;
     grid-template-rows: min-content 1fr min-content 1fr min-content ;
-  
   }
   
   .decorated-zone::before {
@@ -150,6 +149,10 @@
   
   .content__section-subtitle {
     color: var(--bg-color);
+  }
+
+  .block-3 .content__section-subtitle {
+    font-weight: var(--main-font-weight);
   }
   
   .block-3 h3 {
@@ -317,7 +320,7 @@
   .header {
     margin-block-start: -20px;
   }
-  
+
   .header__content-title {
     margin-inline-start: -20px;
     font-size: var(--title-size);
