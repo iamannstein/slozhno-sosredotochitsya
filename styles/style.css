@@ -209,10 +209,6 @@
 
 @media (768px <= width < 1024px) {
 
-  .header {
-    min-block-size: var(--block-size);
-  }
-
   .header__decor-element {
     margin-inline-end: calc(20px + 0.5vi);
   }
@@ -316,10 +312,6 @@
     padding: var(--pd);
   }
 
-  .header {
-    min-block-size: var(--block-size);
-  }
-
   .header__decor-element {
     margin-inline-end: calc(20px + 0.5vi);
   }
@@ -336,7 +328,6 @@
   }
 
   .header__theme-menu-list {
-    padding-block-start: 0;
     flex-direction: row;
     gap: 25px;
   }

@@ -13,7 +13,7 @@
   --font-weight-bold: bold;
   --main-font-size: 18px;
   --bg-image: url(../images/cover-image-dark.png);
-  --block-size: calc(100vh - 5.2vi);
+  --block-size: 100vh;
   --pd: 2.61vi;
 
   
@@ -41,7 +41,6 @@
 @media (width >= 1024px) {
 
   :root {
-    --block-size: calc(100vh - 4vi);
     --pd: 2vi;
     --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --content-mg-blk-start: 80px;
