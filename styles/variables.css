@@ -1,4 +1,50 @@
 /*
-  Переменные для вашего проекта
+  Переменные для проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --bg-color: #000028;
+  --main-text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
+  --main-font: 'IBM Plex Mono';
+  --main-font-weight: normal;
+  --font-weight-bold: bold;
+  --main-font-size: 18px;
+  --bg-image: url(../images/cover-image-dark.png);
+  --block-size: calc(100vh - 5.2vi);
+  --pd: 2.61vi;
+  --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --content-mg-blk-start: 50px;
+  
+}
+
+@media (375px <= width < 768px) {
+
+  :root {
+
+  }
+
+}
+
+@media (768px <= width < 1024px) {
+
+  :root {
+    --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --content-mg-blk-start: 80px;
+  }
+
+}
+
+
+@media (width >= 1024px) {
+
+  :root {
+    --block-size: calc(100vh - 4vi);
+    --pd: 2vi;
+    --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --content-mg-blk-start: 80px;
+  }
+
+}
