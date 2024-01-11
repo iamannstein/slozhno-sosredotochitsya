@@ -231,7 +231,7 @@
     margin-block-start: var(--content-mg-blk-start);
   }
 
-  .content__section-image-list  {
+  .content__section-image-list {
     display: grid;
     gap: 20px;
   }
@@ -390,7 +390,7 @@
     grid-column: 2/4;
   }
 
-  .content__section-image-list  {
+  .content__section-image-list {
     display: grid;
     gap: 20px;
   }
