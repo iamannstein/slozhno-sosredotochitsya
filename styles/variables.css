@@ -12,26 +12,19 @@
   --main-font-weight: normal;
   --font-weight-bold: bold;
   --main-font-size: 18px;
+  --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --bg-image: url(../images/cover-image-dark.png);
   --block-size: 100vh;
-  --pd: 2.61vi;  
-}
-
-@media (375px <= width < 768px) {
-
-  :root {
-    --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    --content-mg-blk-start: 40px;
-    --content-gap: 50px;
-  }
-
+  --common-pd: 2.61vi;
+  --content-gap: 50px;
+  --content-pd-blk-start: 40px;  
 }
 
 @media (768px <= width < 1024px) {
 
   :root {
     --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    --content-mg-blk-start: 60px;
+    --content-pd-blk-start: 60px;
     --content-gap: 80px;
   }
 
@@ -41,9 +34,9 @@
 @media (width >= 1024px) {
 
   :root {
-    --pd: 2vi;
+    --common-pd: 2vi;
     --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    --content-mg-blk-start: 60px;
+    --content-pd-blk-start: 60px;
     --content-gap: 80px;
   }
 

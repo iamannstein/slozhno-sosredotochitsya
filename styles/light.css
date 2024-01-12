@@ -73,6 +73,10 @@
   .content__section-title {
     color: var(--main-text-color);
   }
+
+  .block-3 .content__section-title:nth-child(2) {
+    color: var(--main-text-color);
+  }
   
   .content__section-subtitle {
     color: var(--main-text-color);
@@ -121,6 +125,10 @@
 }
 
 .theme_light .content__section-title {
+  color: var(--main-text-color);
+}
+
+.theme_light .block-3 .content__section-title:nth-child(2) {
   color: var(--main-text-color);
 }
 
