@@ -12,47 +12,27 @@
   --bg-image: url(../images/cover-image-dark.png);
 }
 
-@media (768px <= width < 1024px) {
-
-  :root .theme_dark {
-    --pd: 2.61vi;
-  }
-
-}
-
-@media (width >= 1024px) {
-
-  :root .theme_dark {
-    --pd: 2vi;
-  }
-
-}
-
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-  background-color: var(--bg-color);
   color: var(--main-text-color);
-  font-family: var(--main-font, Arial, sans-serif);
+  font-family: var(--main-font, 'monaco', monospace);
   font-weight: var(--main-font-weight);
   font-size: var(--main-font-size);
+  background-color: var(--bg-color);
   background-image: var(--bg-image);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .theme_dark .decorated-zone::before {
-  border-block-start: 1px solid var(--accent-color);
   border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color);
 }
 
 .theme_dark .decorated-zone::after {
-  border-block-end: 1px solid var(--accent-color);
   border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
 }
 
 .theme_dark .header__decor-element {
@@ -71,7 +51,10 @@
   color: var(--accent-color);
 }
 
-.theme_dark .content__section-subtitle {
+.theme_dark .content__section-article .content__section-title {
   color: var(--bg-color);
 }
 
+.theme_dark .content__section-subtitle {
+  color: var(--bg-color);
+}
