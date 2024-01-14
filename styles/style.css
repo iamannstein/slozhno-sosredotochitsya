@@ -19,7 +19,7 @@
     display: grid;
     grid-template-rows: min-content 1fr min-content 1fr min-content ;
     margin-block-start: -10px;
-    min-block-size: var(--block-size);
+    block-size: var(--block-size);
   }
   
   .decorated-zone::before {
@@ -227,7 +227,7 @@
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     padding-block-start: 10px;
-    min-block-size: var(--block-size);
+    block-size: var(--block-size);
   }
   
   .footer__title {
